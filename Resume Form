@@ -1,0 +1,138 @@
+#html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resume Form</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h2>Resume Form</h2>
+    <form action="#" method="post" enctype="multipart/form-data">
+      <label>Full Name:</label>
+      <input type="text" name="fullname" required />
+
+      <label>Email Address:</label>
+      <input type="email" name="email" required />
+
+      <label>Phone Number:</label>
+      <input type="tel" name="phone" required />
+
+      <label>Date of Birth:</label>
+      <input type="date" name="dob" required />
+
+      <label>Gender:</label>
+      <select name="gender" required>
+        <option value="">--Select--</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label>Marital Status:</label>
+      <select name="marital" required>
+        <option value="">--Select--</option>
+        <option value="single">Single</option>
+        <option value="married">Married</option>
+      </select>
+
+      <label>Nationality:</label>
+      <input type="text" name="nationality" required />
+
+      <label>Address:</label>
+      <textarea name="address" rows="3" required></textarea>
+
+      <label>LinkedIn Profile URL:</label>
+      <input type="url" name="linkedin" />
+
+      <label>GitHub Profile URL:</label>
+      <input type="url" name="github" />
+
+      <label>Upload Profile Photo:</label>
+      <input type="file" name="photo" accept="image/*" />
+
+      <label>Upload Resume (PDF only):</label>
+      <input type="file" name="resume" accept=".pdf" required />
+
+      <label>Career Objective:</label>
+      <textarea name="objective" rows="3"></textarea>
+
+      <label>Highest Qualification:</label>
+      <input type="text" name="qualification" required />
+
+      <label>Name of College / University:</label>
+      <input type="text" name="college" required />
+
+      <label>Year of Graduation:</label>
+      <input type="number" name="graduation" min="1900" max="2100" required />
+
+      <label>Technical Skills (HTML, CSS, JS, etc.):</label>
+      <input type="text" name="skills" />
+
+      <label>Programming Languages Known:</label>
+      <input type="text" name="languages" />
+
+      <label>Certifications:</label>
+      <textarea name="certifications" rows="2"></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
+
+ #css
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px;
+  background: #3498db;
+  color: white;
+  border: none;
+  width: 100%;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2980b9;
+}
